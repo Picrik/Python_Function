@@ -1,4 +1,11 @@
+# First function : compare two dataframes
+
 def findDiff(df1, df2, nom_col):
+    """ findDiff(df1, df2, nom_col)
+    nom_col = name of the column with the uniques value (index for example)
+    Print Difference between two dataframe
+    They have to be the same size
+    """
     count_row = (df1.shape[0])
     count_col = (df1.shape[1])
     for i in range(count_row):
