@@ -16,3 +16,15 @@ def findDiff(df1, df2, nom_col):
                         print(df1.loc[i].values)
                         print(df2.loc[j].values)
                         print("--")
+
+# Find out if a number is a prime number
+
+def primeNumber(num):
+    test = 0
+    for i in range(2,num):
+        if (num % i) == 0:
+            test += 1
+    if test != 0:
+        print(num, " it's not a prime number !")
+    else:
+        print(num, " it's a prime number !")
